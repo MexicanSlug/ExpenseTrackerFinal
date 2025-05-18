@@ -1,0 +1,6 @@
+
+Steps:
+1. Create User Pool with email sign-up enabled.
+2. Create App Client (no client secret).
+3. Enable Cognito Identity Pool and link User Pool.
+4. Add authenticated role with access to invoke API Gateway and read/write DynamoDB.

@@ -1,0 +1,5 @@
+
+TableName: Expenses
+Primary Key: userId (String)
+Sort Key: expenseId (String)
+Attributes: date, amount, category, description

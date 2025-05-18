@@ -1,0 +1,33 @@
+
+service: expense-tracker
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: us-east-1
+
+functions:
+  create:
+    handler: createExpense.handler
+    events:
+      - http:
+          path: create
+          method: post
+  read:
+    handler: readExpense.handler
+    events:
+      - http:
+          path: read
+          method: get
+  update:
+    handler: updateExpense.handler
+    events:
+      - http:
+          path: update
+          method: put
+  delete:
+    handler: deleteExpense.handler
+    events:
+      - http:
+          path: delete
+          method: delete
